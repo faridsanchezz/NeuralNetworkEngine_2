@@ -50,7 +50,7 @@ def load_and_preprocess_data_iris():
 
 
 
-def load_and_preprocess_data_mnist():
+def load_and_preprocess_data_mnist(path_mnist_data):
     """
     Load and preprocess the MNIST dataset.
 
@@ -64,7 +64,7 @@ def load_and_preprocess_data_mnist():
     tuple
         X_train, y_train, X_test, y_test
     """
-    path_mnist_data = "../MNIST_data"  # ruta de la carpeta donde se encuentra los datos MNIST
+      # ruta de la carpeta donde se encuentra los datos MNIST
     try:
         mndata = MNIST(path_mnist_data)
         X_train, y_train = mndata.load_training()
